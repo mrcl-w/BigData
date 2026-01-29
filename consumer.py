@@ -29,8 +29,7 @@ consumer = KafkaConsumer(
     INPUT_TOPIC,
     bootstrap_servers=[KAFKA_BROKER],
     auto_offset_reset='latest',
-    enable_auto_commit=True,
-    group_id=f'student_consumer_{int(time())}',
+    #group_id=f'student_consumer_{int(time())}',
     value_deserializer=lambda x: json.loads(x.decode('utf-8'))
 )
 

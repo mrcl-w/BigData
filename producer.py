@@ -4,7 +4,7 @@ from kafka import KafkaProducer
 import pandas as pd
 
 data = pd.read_csv('data_grad.csv', sep=',')
-print(data.iterrows())
+#print(data.iterrows())
 KAFKA_BROKER = 'localhost:9092'
 OUTPUT_TOPIC = 'topicBD'
 
